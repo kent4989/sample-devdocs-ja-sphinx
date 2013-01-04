@@ -1,0 +1,287 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>2. ドキュメント更新のガイドライン &mdash; Sphinxによる設計文書管理スタディー 0.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Sphinxによる設計文書管理スタディー 0.0 documentation" href="index.html" />
+    <link rel="next" title="3. 企画・構想" href="inception/index.html" />
+    <link rel="prev" title="1. はじめに" href="intro.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="inception/index.html" title="3. 企画・構想"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="intro.html" title="1. はじめに"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Sphinxによる設計文書管理スタディー 0.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">2. ドキュメント更新のガイドライン</a><ul>
+<li><a class="reference internal" href="#sphinx-windows">2.1. Sphinxのインストール(Windows向け)</a></li>
+<li><a class="reference internal" href="#id2">2.2. 文書のビルド</a><ul>
+<li><a class="reference internal" href="#id3">2.2.1. 文書全体をビルドする</a></li>
+<li><a class="reference internal" href="#id4">2.2.2. 特定の文書だけをビルドする</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id5">2.3. 文書の追加</a></li>
+<li><a class="reference internal" href="#id6">2.4. 文書の修正</a></li>
+<li><a class="reference internal" href="#id7">2.5. 文書の構成について</a></li>
+<li><a class="reference internal" href="#about-rst">2.6. 最低限の文法説明</a></li>
+<li><a class="reference internal" href="#id9">2.7. 本ドキュメントのローカルルール</a><ul>
+<li><a class="reference internal" href="#id10">2.7.1. 画像・添付ファイルの取り扱い</a></li>
+<li><a class="reference internal" href="#id11">2.7.2. 用語集の使用</a><ul>
+<li><a class="reference internal" href="#id12">2.7.2.1. 用語を登録する</a></li>
+<li><a class="reference internal" href="#id13">2.7.2.2. 用語を使用する</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sphinx">2.8. Sphinxに関する参考情報</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="intro.html"
+                        title="previous chapter">1. はじめに</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="inception/index.html"
+                        title="next chapter">3. 企画・構想</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/using_sphinx.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="id1">
+<h1>2. ドキュメント更新のガイドライン<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>本ドキュメントは、オープンソースで提供されているPython製のドキュメント生成ツール Sphinxを利用して作成されています。本項では本ドキュメントを更新するための最低限の情報を示します。より詳細な情報が必要な場合は、末尾に記載の参考サイトや各種技術書籍を確認してください。</p>
+<div class="section" id="sphinx-windows">
+<span id="index-0"></span><h2>2.1. Sphinxのインストール(Windows向け)<a class="headerlink" href="#sphinx-windows" title="Permalink to this headline">¶</a></h2>
+<p>本ドキュメントを閲覧するだけであればSphinxのインストールは不要です。更新・追加を行う場合のみ、以下のサイトを参考にインストールを行なって下さい。</p>
+<ul class="simple">
+<li><a class="reference external" href="http://sphinx-users.jp/gettingstarted/install_windows.html">http://sphinx-users.jp/gettingstarted/install_windows.html</a></li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h2>2.2. 文書のビルド<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>本ドキュメントの各パーツは、拡張子rstのテキストファイルになります。文書をビルドすることで、これらのテキストファイルは統合されHTMLや各種のフォーマットで出力されます。</p>
+<div class="section" id="id3">
+<h3>2.2.1. 文書全体をビルドする<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>文書全体をビルドする場合は、予め用意されたMake.batコマンドを利用します。コマンドラインで以下のコマンドを実行して下さい。</p>
+<div class="highlight-python"><pre>Make HTML</pre>
+</div>
+<p>結果はデフォルトでは_buildフォルダに出力されます。</p>
+</div>
+<div class="section" id="id4">
+<h3>2.2.2. 特定の文書だけをビルドする<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>文書の追加や修正をおこなう際には、特定のファイルだけをビルドして出力結果を確認することができます。コマンドラインで以下のコマンドを実行して下さい。</p>
+<div class="admonition-todo admonition" id="index-1">
+<p class="first admonition-title">Todo</p>
+<p class="last">要調査。上記のように書いたけれども、Sphinxは1ファイルだけのビルドは出来ないように見える。
+ちょっと修正するだけでもMakeしたほうが良いのかも(差分rstファイルだけを更新しているようだ)。</p>
+</div>
+</div>
+</div>
+<div class="section" id="id5">
+<h2>2.3. 文書の追加<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p>新たに文書を追加する場合は、拡張子rstのテキストファイルを追加します。追加するファイルは文字コードUTF-8で保存してください。また、追加したテキストファイルを目次に追加する必要があります。目次ファイルは各フォルダにあるindex.rstです。</p>
+<p>各フォルダにあるindex.rstに書かれたtoctreeにファイル名(拡張子は不要です)を追加すれば、ビルド時に自動的に目次に記述内容が組み込まれます。文法の説明は <a class="reference internal" href="#about-rst"><em>最低限の文法説明</em></a> を参照してください。</p>
+</div>
+<div class="section" id="id6">
+<h2>2.4. 文書の修正<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<p>既存の文書を修正する場合はテキストエディタで修正を行なって下さい。文法の説明は <a class="reference internal" href="#about-rst"><em>最低限の文法説明</em></a> を参照してください。</p>
+</div>
+<div class="section" id="id7">
+<h2>2.5. 文書の構成について<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<p>このドキュメントは、ドキュメントの用途種類別にフォルダを分けて管理しています。それぞれのフォルダにはindex.rstという目次ファイルがあります。文書を新たに追加した場合は、目次ファイルの修正も必要です。</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="31%" />
+<col width="69%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head" colspan="2">本ドキュメントの構成</th>
+</tr>
+<tr class="row-even"><th class="head">フォルダ</th>
+<th class="head">フォルダの役割・位置付け</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-odd"><td>inception</td>
+<td>企画・構想</td>
+</tr>
+<tr class="row-even"><td>project</td>
+<td>プロジェクト計画</td>
+</tr>
+<tr class="row-odd"><td>design</td>
+<td>設計</td>
+</tr>
+<tr class="row-even"><td>development</td>
+<td>製造</td>
+</tr>
+<tr class="row-odd"><td>test</td>
+<td>テスト</td>
+</tr>
+<tr class="row-even"><td>release</td>
+<td>移行・導入</td>
+</tr>
+<tr class="row-odd"><td>maintenance</td>
+<td>保守</td>
+</tr>
+<tr class="row-even"><td>records</td>
+<td>その他開発記録</td>
+</tr>
+</tbody>
+</table>
+<p>上記のフォルダに含まれないものは <a class="reference internal" href="index.html"><em>全体の目次</em></a> 、 <a class="reference internal" href="intro.html"><em>はじめに</em></a> 、 <a class="reference internal" href=""><em>ドキュメント更新のガイドライン</em></a> の3つです。</p>
+</div>
+<div class="section" id="about-rst">
+<span id="index-2"></span><span id="id8"></span><h2>2.6. 最低限の文法説明<a class="headerlink" href="#about-rst" title="Permalink to this headline">¶</a></h2>
+<p>Sphinxでは、reStructredTextという、Wikiに似た簡易テキストマークアップを利用してドキュメントを作っていきます。ここではよく利用する基本的なテンプレートで説明を行います。</p>
+<div class="highlight-python"><pre>==============
+ページタイトル
+==============
+
+大項目
+======
+
+・・・・・本文・・・・・
+
+中項目
+------
+
+- リスト1
+- リスト2
+
+ - リスト2-1 (上下に空行を入れる点に注意して下さい)
+
+- リスト3
+
+小項目
+------
+**太字**
+
+*斜体*
+
+``リテラル``
+
+`リンク付きテキスト &lt;http://python.org&gt;`_</pre>
+</div>
+<p>さらに詳細なreStructredTextの文法は文末の <a class="reference internal" href="#reference"><em>Sphinxに関する参考情報</em></a> を参照してください。</p>
+</div>
+<div class="section" id="id9">
+<h2>2.7. 本ドキュメントのローカルルール<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id10">
+<h3>2.7.1. 画像・添付ファイルの取り扱い<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<p>文書内に表示する画像や、各種の添付ファイルについては_staticフォルダに、文書のファイルと同名のフォルダを作成した上で格納してください。</p>
+</div>
+<div class="section" id="id11">
+<h3>2.7.2. 用語集の使用<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<p>用語集ファイルを使用することで、用語名の統一を図ることができます。例えばシステム名称は開発段階では無かったり、仮称であったりします。用語集ファイルに書き出して活用することで、常に一貫した擁護を使うことができます。</p>
+<div class="section" id="id12">
+<h4>2.7.2.1. 用語を登録する<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h4>
+<p>用語集ファイル(definition.txt)に用語を登録してください。</p>
+<div class="highlight-python"><pre>.. |hello| replace:: (^o^)／</pre>
+</div>
+</div>
+<div class="section" id="id13">
+<h4>2.7.2.2. 用語を使用する<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h4>
+<p>ファイルの冒頭に以下のinclude定義を行なって下さい。文中では、|用語|で記述すれば、文書のビルド時に一括して置換されます。</p>
+<div class="highlight-python"><pre>.. include:: definition.txt
+・
+・
+・
+定義された名前を呼び出します。|hello|</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="sphinx">
+<span id="reference"></span><h2>2.8. Sphinxに関する参考情報<a class="headerlink" href="#sphinx" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="http://sphinx-users.jp/">http://sphinx-users.jp/</a></li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="inception/index.html" title="3. 企画・構想"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="intro.html" title="1. はじめに"
+             >previous</a> |</li>
+        <li><a href="index.html">Sphinxによる設計文書管理スタディー 0.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, Kent Ishizawa.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

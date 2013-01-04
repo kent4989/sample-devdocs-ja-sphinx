@@ -1,0 +1,28 @@
+..
+  ==============
+  用語集ファイル
+  ==============
+  このファイルは本ドキュメントの用語集です。
+  
+  使い方
+  ======
+  ドキュメントの冒頭にて本ドキュメントをincludeします。
+  .. include:: ../definition.txt
+  文中では|system_ name|と書くと、自動的に置換されます。
+
+.. ================
+.. 全般的な用語定義
+.. ================
+.. |system_name| replace:: ●▲■システム(仮称)
+
+.. ==========================
+.. ドキュメントのフォルダ名称
+.. ==========================
+.. |inception| replace:: 企画・構想
+.. |project| replace:: プロジェクト計画
+.. |design| replace:: 設計
+.. |development| replace:: 製造
+.. |test| replace:: テスト
+.. |release| replace:: 移行・導入
+.. |maintenance| replace:: 保守
+.. |records| replace:: その他開発記録

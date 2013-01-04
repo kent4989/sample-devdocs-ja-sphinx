@@ -1,0 +1,218 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>1. はじめに &mdash; Sphinxによる設計文書管理スタディー 0.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Sphinxによる設計文書管理スタディー 0.0 documentation" href="index.html" />
+    <link rel="next" title="2. ドキュメント更新のガイドライン" href="using_sphinx.html" />
+    <link rel="prev" title="Sphinxによる設計文書管理スタディー" href="index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="using_sphinx.html" title="2. ドキュメント更新のガイドライン"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Sphinxによる設計文書管理スタディー"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Sphinxによる設計文書管理スタディー 0.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">1. はじめに</a><ul>
+<li><a class="reference internal" href="#sphinx">1.1. 「Sphinxによる設計文書管理スタディー」の「はじめに」</a><ul>
+<li><a class="reference internal" href="#id2">1.1.1. 参考</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#index-0">1.2. はじめに</a><ul>
+<li><a class="reference internal" href="#id4">1.2.1. このドキュメントについて</a></li>
+<li><a class="reference internal" href="#id5">1.2.2. このドキュメントのステータス</a></li>
+<li><a class="reference internal" href="#id6">1.2.3. ドキュメントの対象読者</a><ul>
+<li><a class="reference internal" href="#id7">1.2.3.1. プロダクトオーナー・プロジェクト責任者</a></li>
+<li><a class="reference internal" href="#id8">1.2.3.2. ビジネスユーザー・ユーザ担当者</a></li>
+<li><a class="reference internal" href="#id9">1.2.3.3. プロジェクトマネージャ</a></li>
+<li><a class="reference internal" href="#id10">1.2.3.4. ソフトウェア開発者</a></li>
+<li><a class="reference internal" href="#id11">1.2.3.5. 運用担当者</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">Sphinxによる設計文書管理スタディー</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="using_sphinx.html"
+                        title="next chapter">2. ドキュメント更新のガイドライン</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/intro.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="id1">
+<h1>1. はじめに<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="sphinx">
+<h2>1.1. 「Sphinxによる設計文書管理スタディー」の「はじめに」<a class="headerlink" href="#sphinx" title="Permalink to this headline">¶</a></h2>
+<p>この一連の文書「Sphinxによる設計文書管理スタディー」は、ソフトウェア開発プロジェクトにおける設計ドキュメントをPython製ドキュメンテーションビルダー、Sphinxで記述する試みです。</p>
+<p>ソフトウェア開発プロジェクトでは、多かれ少なかれドキュメントを作成する必要があります。それらのドキュメントはMicrosoft OfficeといったOAソフト(Word、Excel)によって作成されるのが一般的ですが、いくつかの問題点があります。</p>
+<ul class="simple">
+<li>文書の整形、出力に関する「見た目のための作業」が多い<ul>
+<li>改行、改ページ、インデント、文字サイズ etc..</li>
+</ul>
+</li>
+<li>内容のメンテナンス・維持が難しい<ul>
+<li>常に全ての内容を最新化し続けるのが難しい。特にドキュメント量が膨大になった場合に、個々の文書を更新するのが大変である</li>
+</ul>
+</li>
+<li>量が多くなってくると、何がどこにあるのかもわからなくなってくる</li>
+</ul>
+<p>このような問題に対して例えば高機能な検索アプライアンスやドキュメント管理ソリューションを適用するといった例もあるようです。しかし、本文書ではPython製のドキュメンテーションビルダー Sphinxを適用することによってこれらの問題を解決することを試みようとしています。</p>
+<p>「Sphinxによる設計文書管理スタディー」は以下の目標を持って作成されています。</p>
+<ul class="simple">
+<li>Sphinxによるドキュメント管理についてイメージできるような、内容を持った一連のドキュメントを構成する</li>
+<li>実際のソフトウェア開発プロジェクトに適用することを想定した、各種設計ドキュメントのテンプレートを提供する</li>
+<li>複数人で構成される(おそらくSphinxについて詳しくない)チームメンバーが共同作業できるような、最小限のガイドラインや補足文書をあらかじめ組み込んでおく。</li>
+</ul>
+<div class="section" id="id2">
+<h3>1.1.1. 参考<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>業務での利用事例 :: ドキュメンテーションツール スフィンクス Sphinx-users.jp<ul>
+<li><a class="reference external" href="http://sphinx-users.jp/event/20101203_jus_benkyoukai/practical_sample/index.html">http://sphinx-users.jp/event/20101203_jus_benkyoukai/practical_sample/index.html</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="index-0">
+<span id="id3"></span><h2>1.2. はじめに<a class="headerlink" href="#index-0" title="Permalink to this headline">¶</a></h2>
+<div class="admonition hint">
+<p class="first admonition-title">Hint</p>
+<p class="last">この項は実際のプロジェクトで利用される場合を想定して記載されたものです。必要に応じて修正する必要があります。</p>
+</div>
+<div class="section" id="id4">
+<h3>1.2.1. このドキュメントについて<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>あなたが参照しているこのドキュメントは、●▲■システム(仮称) に関して記述されています。ドキュメントは状況に応じて更新される場合があります。あなたがドキュメントの(物理的、電子的なものに限らず)コピーを参照している場合は、より新しいバージョンのドキュメントが存在しないか確認することをお勧めします。</p>
+</div>
+<div class="section" id="id5">
+<h3>1.2.2. このドキュメントのステータス<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>●▲■システム(仮称) は現在構築中のシステムであり、このドキュメントも随時更新されています。おおまかなドキュメントの更新履歴は以下の通りです。より詳細な更新履歴は構成管理システムで管理されています。必要に応じて問い合わせて下さい。</p>
+<ul class="simple">
+<li>201X/01/04 ドキュメントの初版がリリースされました。(Ver 0.0)</li>
+<li>201X/XX/XX ●▲■システム(仮称) のα版を更改し、これに伴いドキュメントが更新されました。(Ver 1.0)</li>
+</ul>
+</div>
+<div class="section" id="id6">
+<h3>1.2.3. ドキュメントの対象読者<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>このドキュメントは以下の対象読者を想定して記述しています。</p>
+<ul class="simple">
+<li>プロダクトオーナー・プロジェクト責任者</li>
+<li>ビジネスユーザー・ユーザ担当者</li>
+<li>プロジェクトマネージャ</li>
+<li>ソフトウェア開発者</li>
+<li>運用担当者</li>
+</ul>
+<p>それぞれの対象読者別に、このドキュメントの読み方を説明します。</p>
+<div class="section" id="id7">
+<h4>1.2.3.1. プロダクトオーナー・プロジェクト責任者<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
+<div class="admonition-todo admonition" id="index-1">
+<p class="first admonition-title">Todo</p>
+<p class="last">ドキュメントの対象読者のサンプルを後で書く</p>
+</div>
+</div>
+<div class="section" id="id8">
+<h4>1.2.3.2. ビジネスユーザー・ユーザ担当者<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="id9">
+<h4>1.2.3.3. プロジェクトマネージャ<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="id10">
+<h4>1.2.3.4. ソフトウェア開発者<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="id11">
+<h4>1.2.3.5. 運用担当者<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h4>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="using_sphinx.html" title="2. ドキュメント更新のガイドライン"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Sphinxによる設計文書管理スタディー"
+             >previous</a> |</li>
+        <li><a href="index.html">Sphinxによる設計文書管理スタディー 0.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, Kent Ishizawa.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>
