@@ -65,6 +65,7 @@
 <li><a class="reference internal" href="#id11">2.7.2. 用語集の使用</a><ul>
 <li><a class="reference internal" href="#id12">2.7.2.1. 用語を登録する</a></li>
 <li><a class="reference internal" href="#id13">2.7.2.2. 用語を使用する</a></li>
+<li><a class="reference internal" href="#index">2.7.2.3. INDEXを使用する</a></li>
 </ul>
 </li>
 </ul>
@@ -221,7 +222,7 @@
 
 `リンク付きテキスト &lt;http://python.org&gt;`_</pre>
 </div>
-<p>さらに詳細なreStructredTextの文法は文末の <a class="reference internal" href="#reference"><em>Sphinxに関する参考情報</em></a> を参照してください。</p>
+<p>さらに詳細なreStructredTextの文法は文末の <a class="reference internal" href="#reference"><em>INDEXを使用する</em></a> を参照してください。</p>
 </div>
 <div class="section" id="id9">
 <h2>2.7. 本ドキュメントのローカルルール<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
@@ -241,17 +242,30 @@
 <div class="section" id="id13">
 <h4>2.7.2.2. 用語を使用する<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h4>
 <p>ファイルの冒頭に以下のinclude定義を行なって下さい。文中では、|用語|で記述すれば、文書のビルド時に一括して置換されます。</p>
-<div class="highlight-python"><pre>.. include:: definition.txt
+<div class="highlight-python"><pre>.. include:: ../definition.txt
 ・
 ・
 ・
 定義された名前を呼び出します。|hello|</pre>
 </div>
 </div>
+<div class="section" id="index">
+<span id="reference"></span><h4>2.7.2.3. INDEXを使用する<a class="headerlink" href="#index" title="Permalink to this headline">¶</a></h4>
+<p>任意のキーワードで索引(INDEX)を作ることができます。ここで言う索引とは、目次ではなく技術書の末尾にあるようなものです。文章に関連したキーワードを設定しておけば文章の閲覧性が高まります。特に細かいルールはありませんが、以下の場合にはINDEXを記述するようにして下さい。</p>
+<ul class="simple">
+<li>文章内でユニークな事柄や特記事項を記載する場合</li>
+<li>システムの特定の機能に関する記述</li>
+</ul>
+<p>INDEXエントリーはカンマ区切りで複数指定することもできます。またセミコロンで区切った場合、サブエントリーとなります。</p>
+<div class="highlight-python"><pre>.. index: keyword1,keyword2,keyword3;sub-keyword3.1
+・
+・</pre>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="sphinx">
-<span id="reference"></span><h2>2.8. Sphinxに関する参考情報<a class="headerlink" href="#sphinx" title="Permalink to this headline">¶</a></h2>
+<h2>2.8. Sphinxに関する参考情報<a class="headerlink" href="#sphinx" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><a class="reference external" href="http://sphinx-users.jp/">http://sphinx-users.jp/</a></li>
 </ul>
